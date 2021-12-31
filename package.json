@@ -1,0 +1,39 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "open source blog core",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "start-dev": "nodemon src/server.ts",
+    "build": "rm -rf build/ && prettier --write src/ && tsc",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "npx eslint -c .eslintrc.yml ./src/*",
+    "fix": "npx eslint -c .eslintrc.yml ./src/* --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tancer-soft/blog-backend.git"
+  },
+  "keywords": [
+    "blog",
+    "core",
+    "blog_core"
+  ],
+  "author": "astrica1",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/tancer-soft/blog-backend/issues"
+  },
+  "homepage": "https://github.com/tancer-soft/blog-backend#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.5.0",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  }
+}
